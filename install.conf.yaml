@@ -1,12 +1,18 @@
+
 - defaults:
     link:
       relink: true
 
 - clean: ['~']
 
+- link:
+    ~/.zshrc: zshrc
+
 - create:
-    - ~/hey/you/guys
-    - ~/Workspace
+    - ~/Documents/workspace
+    - ~/Documents/training
+    - ~/Documents/training/personal
+    - ~/Documents/training/labs
 
 #- shell:
 #  - [git submodule update --init --recursive, Installing submodules]
