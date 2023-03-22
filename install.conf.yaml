@@ -6,7 +6,8 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
+    ~/.zshrc: 
+    ~/.gitconfig: 
 
 - create:
     - ~/Documents/workspace
