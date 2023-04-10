@@ -18,8 +18,7 @@ alias ls='exa'
 alias ll='ls'
 alias tree='ls --tree --level=2'
 alias tree_all='ls --tree'
-alias tree_='f(){ ls --tree --level="$@";  unset -f f; }; f'
-
+alias tree_level='f(){ ls --tree --level="$@";  unset -f f; }; f'
 # Custom the prompt(s)
 PROMPT='
 %1~ %L %# '
