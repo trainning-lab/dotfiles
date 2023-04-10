@@ -1,14 +1,11 @@
-echo "hello username $(date)"
-
-
 # Set Variables
-# Syntax highlight for man pages using bat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
 
 
 # Change ZSH options 
-
 
 
 # Create Aliases
@@ -19,6 +16,7 @@ alias ll='ls'
 alias tree='ls --tree --level=2'
 alias tree_all='ls --tree'
 alias tree_level='f(){ ls --tree --level="$@";  unset -f f; }; f'
+alias man=batman
 # Custom the prompt(s)
 PROMPT='
 %1~ %L %# '
