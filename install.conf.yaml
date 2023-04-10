@@ -7,7 +7,10 @@
 
 - link:
     ~/.zshrc: 
-    ~/.gitconfig: 
+    ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/Documents/workspace
