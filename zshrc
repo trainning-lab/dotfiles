@@ -2,7 +2,8 @@ echo "hello username $(date)"
 
 
 # Set Variables
-
+# Syntax highlight for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 
 # Change ZSH options 
@@ -20,6 +21,13 @@ PROMPT='
 RPROMPT='%*'
 
 # Add Locations to $PATH Variables
+# Add Visual Studio Code (code)
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 
 
