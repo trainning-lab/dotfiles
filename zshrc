@@ -1,6 +1,3 @@
-echo "hello username $(date)"
-
-
 # Set Variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
@@ -8,9 +5,7 @@ export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 
 
-
 # Change ZSH options 
-
 
 
 # Create Aliases
