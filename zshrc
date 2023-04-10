@@ -12,8 +12,13 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 
 # Create Aliases
-alias ls='ls -lAFh'
+alias exa='exa -laFh --git'
+alias ls='exa'
+# alias ls='ls -lAFh'
 alias ll='ls'
+alias tree='ls --tree --level=2'
+alias tree_all='ls --tree'
+alias tree_='f(){ ls --tree --level="$@";  unset -f f; }; f'
 
 # Custom the prompt(s)
 PROMPT='
