@@ -13,5 +13,5 @@ dotfiles.luisfer.labs
 - [ ]  Trackpad (Three Finger Drag and Tap to Click)
 - [x]  .zshrc
 - [ ]  Git (config and SSH)
-
 - [x] Homebrew intalling
+- [ ] Alfred(Turn off Spotligh shortcut and use for Alfred) 
