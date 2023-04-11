@@ -1,4 +1,4 @@
-echo "hello username $(date)"
+echo "hello zshrc $(date)"
 
 
 # Set Variables
@@ -18,36 +18,25 @@ alias ls='exa'
 alias ll='ls'
 alias tree='ls --tree --level=2'
 alias tree_all='ls --tree'
+# shellcheck disable=SC2142
 alias tree_level='f(){ ls --tree --level="$@";  unset -f f; }; f'
 # Custom the prompt(s)
+# shellcheck disable=SC2034
 PROMPT='
 %1~ %L %# '
 
+# shellcheck disable=SC2034
 RPROMPT='%*'
-
-# Add Locations to $PATH Variables
-# Add Visual Studio Code (code)
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
-# This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
 
 
 # Write Handy Functions
 
 function mkcd(){
- mkdir -p "$@" && cd "$_";
+ mkdir -p "$@" && cd "$_" || exit;
+}
+
+function exists() {
+  command -v $1 >/dev/null 2>&1;
 }
 
 
