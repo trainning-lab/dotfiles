@@ -6,7 +6,8 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: 
+    ~/.zshrc:
+    ~/.zshenv:
     ~/.gitconfig:
     ~/.config/bat:
       create: true
