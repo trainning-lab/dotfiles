@@ -1,7 +1,11 @@
-echo "hello zshrc $(date)"
+# Custom the prompt(s)
 
+export PROMPT='
+%1~ %L %# '
 
-# Set Variables
+export RPROMPT='%*'
+
+# SET VARIABLES
 # Syntax highlight for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
@@ -11,34 +15,29 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 
 
-# Create Aliases
+# CREATE ALIASES
+alias dotfiles='cd ~/.dotfiles'
 alias exa='exa -laFh --git'
 alias ls='exa'
-# alias ls='ls -lAFh'
 alias ll='ls'
+
 alias tree='ls --tree --level=2'
 alias tree_all='ls --tree'
-# shellcheck disable=SC2142
-alias tree_level='f(){ ls --tree --level="$@";  unset -f f; }; f'
-# Custom the prompt(s)
-# shellcheck disable=SC2034
-PROMPT='
-%1~ %L %# '
-
-# shellcheck disable=SC2034
-RPROMPT='%*'
 
 
-# Write Handy Functions
+alias brew_save='brew bundle dump --force --describe'
 
-function mkcd(){
+alias cdd='cd ~/Documents'
+alias cdw='cdd && cd workspace'
+
+
+# WRITE HANDY FUNCTIONS
+
+function mk(){
  mkdir -p "$@" && cd "$_" || exit;
 }
 
-function exists() {
-  command -v $1 >/dev/null 2>&1;
-}
-
+tree_level() { ls --tree --level="$*";  }
 
 # Use ZSH plugins
 
