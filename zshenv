@@ -1,5 +1,3 @@
-echo "hello zshenv $(date)"
-
 # Add Locations to $PATH Variables
 
 # Add Visual Studio Code (code)

@@ -1,9 +1,8 @@
-
 - defaults:
     link:
       relink: true
 
-- clean: ['~']
+- clean: [ '~' ]
 
 - link:
     ~/.zshrc:
@@ -20,8 +19,6 @@
     - ~/Documents/training/labs
 
 - shell:
-   - 
-     command: ./setup_homebrew.zsh
-     stdout: true
-     stderr: true
-   - curl -s "https://get.sdkman.io" | bash
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
