@@ -17,6 +17,8 @@ brew "mas"
 brew "nano"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
 # App to build and share containerized applications and microservices
