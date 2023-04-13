@@ -30,6 +30,7 @@ alias brew_save='brew bundle dump --force --describe'
 alias cdd='cd ~/Documents'
 alias cdw='cdd && cd workspace'
 
+alias  trail='<<<${(F)path}'
 
 # WRITE HANDY FUNCTIONS
 
