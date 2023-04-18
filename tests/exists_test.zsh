@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 
 echo "\n<<< Testing $0 >>>\n"
 echo "ZSH_VERSION=$ZSH_VERSION"

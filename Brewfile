@@ -13,6 +13,8 @@ brew "httpie"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Java-based project management
+brew "maven"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Search tool like grep and The Silver Searcher
@@ -25,10 +27,6 @@ cask "alfred"
 cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
-# Git client focusing on productivity
-cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
