@@ -1,13 +1,16 @@
-
 - defaults:
     link:
       relink: true
 
-- clean: ['~']
+- clean: [ '~' ]
 
 - link:
-    ~/.zshrc: 
-    ~/.gitconfig: 
+    ~/.zshrc:
+    ~/.zshenv:
+    ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/Documents/workspace
@@ -16,10 +19,9 @@
     - ~/Documents/training/labs
 
 - shell:
-#  - [git submodule update --init --recursive, Installing submodules]
-   - echo "Hey! you guys"
-   - sleep 2
-   - 
-     command: ./init.zsh
-     stdout: true
-     stderr: true
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_zsh.zsh
+      stdout: true
+      stderr: true

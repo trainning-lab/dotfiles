@@ -1,42 +1,44 @@
-echo "hello username $(date)"
+# Custom the prompt(s)
 
+export PROMPT='
+%1~ %L %# '
 
-# Set Variables
+export RPROMPT='%*'
 
-
+# SET VARIABLES
+# Syntax highlight for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 # Change ZSH options 
 
 
 
-# Create Aliases
-alias ls='ls -lAFh'
+# CREATE ALIASES
+alias dotfiles='cd ~/.dotfiles'
+alias exa='exa -laFh --git'
+alias ls='exa'
 alias ll='ls'
 
-# Custom the prompt(s)
-PROMPT='
-%1~ %L %# '
-
-RPROMPT='%*'
-
-# Add Locations to $PATH Variables
+alias tree='ls --tree --level=2'
+alias tree_all='ls --tree'
 
 
+alias brew_save='brew bundle dump --force --describe'
 
+alias cdd='cd ~/Documents'
+alias cdw='cdd && cd workspace'
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+alias  trail='<<<${(F)path}'
 
+# WRITE HANDY FUNCTIONS
 
-
-
-# Write Handy Functions
-
-function mkcd(){
- mkdir -p "$@" && cd "$_";
+function mk(){
+ mkdir -p "$@" && cd "$_" || exit;
 }
 
+tree_level() { ls --tree --level="$*";  }
 
 # Use ZSH plugins
 
