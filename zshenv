@@ -2,6 +2,7 @@
 
 # Add Visual Studio Code (code)
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export PATH="$PATH:$N_PREFIX/bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR NVM TO WORK!!!
 export NVM_DIR="$HOME/.nvm"

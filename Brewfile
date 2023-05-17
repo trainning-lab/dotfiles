@@ -15,6 +15,8 @@ brew "less"
 brew "mas"
 # Java-based project management
 brew "maven"
+# Node version management
+brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Search tool like grep and The Silver Searcher
