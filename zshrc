@@ -33,6 +33,7 @@ alias cdd='cd ~/Documents'
 alias cdw='cdd && cd workspace'
 
 alias  trail='<<<${(F)path}'
+alias  rm=trash
 
 # WRITE HANDY FUNCTIONS
 
