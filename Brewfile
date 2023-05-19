@@ -21,6 +21,8 @@ brew "n"
 brew "nano"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# JavaScript package manager
+brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Application launcher and productivity software

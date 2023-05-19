@@ -19,5 +19,5 @@ fi
 if ! exists nvm; then
   printf "\n<<< Starting NVM  Setup>>>\n"
   echo "nvm doesn't exists, continuing with install"
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+  #curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 fi

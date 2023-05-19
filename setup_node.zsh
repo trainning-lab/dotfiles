@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-printf "\n<<< Starting Homebrew Setup >>>\n"
+printf "\n<<< Starting NODE Setup >>>\n"
 
 # Node versions are managed with 'n', which is in the Brewfile.
 # See zshrc for N_PREFIX variable.
@@ -14,6 +14,7 @@ else
 fi
 
 # Install Global packages
+npm install --global yarn
 npm install --global firebase-tools
 npm install --global @angular/cli
 npm install --global @ionic/cli
