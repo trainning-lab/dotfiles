@@ -10,9 +10,18 @@ export RPROMPT='%*'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
+
+# LOCATIONS TO $path ARRAY
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 # Change ZSH options 
-
 
 
 # CREATE ALIASES
@@ -31,6 +40,7 @@ alias cdd='cd ~/Documents'
 alias cdw='cdd && cd workspace'
 
 alias  trail='<<<${(F)path}'
+alias  rm=trash
 
 # WRITE HANDY FUNCTIONS
 
