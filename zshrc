@@ -13,15 +13,15 @@ export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 
-# Add Locations to $PATH Variables
-
-export PATH="$N_PREFIX/bin:$PATH"
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
+# LOCATIONS TO $path ARRAY
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 # Change ZSH options 
-
 
 
 # CREATE ALIASES
